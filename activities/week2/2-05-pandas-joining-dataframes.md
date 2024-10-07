@@ -30,7 +30,7 @@ In this case "country" appears several times in the events data so 'merge' is ne
 
 There are different methods to combine data. These are:
 
-- left: use calling frame’s index (or column if on is specified)
+- left: use calling frame’s index (or column if one is specified)
 - right: use other's index.
 - outer: form a union of calling frame's index (or column if on is specified) with other's index, and sort it
   lexicographically.
@@ -66,7 +66,7 @@ Of the available parameters in the merge function:
 
 You need to specify the following:
 
-`left_dataframe_name.merge(right_dataframe name, how='left', left_on='col_name_in_left_df', right_on='col_name_in_right_df')`
+`left_dataframe_name.merge(right_dataframe_name, how='left', left_on='col_name_in_left_df', right_on='col_name_in_right_df')`
 
 1. Decide where to add code to merge the two dataframes. You can add this to the data preparation function, and add a
    second parameter
